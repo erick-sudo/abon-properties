@@ -10,10 +10,10 @@ function LogoSquare() {
     )
 }
 
-function LogoRect() {
+function LogoRect({size}) {
     return (
         <div className="logo">
-            <img src={logoR} alt="ABONN" />
+            <img src={logoR} className={`h-${size}`} alt="ABONN" />
         </div>
     )
 }
