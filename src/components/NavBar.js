@@ -6,15 +6,15 @@ import { FiPhoneCall } from 'react-icons/fi'
 
 function NavBar() {
     return (
-        <div className="flex ">
-            <LogoRect size={32} />
-            <div className="flex items-center grow text-green-900 font-bold text-lg divide-x-2 divide-amber-500">
-                <NavLink to="/" className="px-6 py-2 hover:bg-sky-800 hover:text-white">Home</NavLink>
-                <NavLink to="/properties" className="px-6 py-2 hover:bg-sky-800 hover:text-white">Properties</NavLink>
-                <NavLink to="/contact" className="px-6 py-2 hover:bg-sky-800 hover:text-white">Contact</NavLink>
-                <NavLink to="/about" className="px-6 py-2 hover:bg-sky-800 hover:text-white">About</NavLink>
+        <div className="grid md:grid-cols-1 lg:grid-cols-3">
+            <LogoRect />
+            <div className="flex justify-center items-center grow text-blue-900 font-bold text-lg py-1">
+                <NavLink to="/" className="px-2 py-1 hover:bg-sky-800 hover:text-white rounded-md">Home</NavLink>
+                <NavLink to="/properties" className="px-2 py-1 hover:bg-sky-800 hover:text-white rounded-md">Properties</NavLink>
+                <NavLink to="/contact" className="px-2 py-1 hover:bg-sky-800 hover:text-white rounded-md">Contact</NavLink>
+                <NavLink to="/about" className="px-2 py-1 hover:bg-sky-800 hover:text-white rounded-md">About</NavLink>
             </div>
-            <div className="flex items-start">
+            <div className="flex flex-wrap justify-center">
                 <div className="flex px-3 font-bold text-green-900 items-center"><ImWhatsapp className="text-xl"/><span className="ml-3">+254706087204</span></div>
                 <div className="flex px-3 font-bold text-green-900 items-center"><FiPhoneCall className="text-xl"/><span className="ml-3">+436787437954</span></div>
             </div>
