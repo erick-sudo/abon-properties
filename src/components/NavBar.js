@@ -6,7 +6,7 @@ import { FiPhoneCall } from 'react-icons/fi'
 
 function NavBar() {
     return (
-        <div className="grid md:grid-cols-1 lg:grid-cols-3 sticky top-0 bg-sky-300 z-10">
+        <div className="grid md:grid-cols-1 lg:grid-cols-3 sticky top-0 bg-sky-300 z-30">
             <LogoRect />
             <div className="flex justify-center items-center grow text-blue-900 font-bold text-lg py-1">
                 <NavLink to="/" className="px-2 py-1 hover:bg-sky-800 hover:text-white rounded-md">Home</NavLink>
