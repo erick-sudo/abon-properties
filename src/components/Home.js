@@ -1,5 +1,6 @@
 import React from "react";
 import { MdOutlineExplore } from "react-icons/md"
+import { ImLocation2 } from "react-icons/im"
 import westsuites from "../assets/properties/westsuites.png"
 import Slideshow from "./Slideshow";
 
@@ -10,7 +11,20 @@ import ws4 from "../assets/properties/ws4.jpeg"
 import ws5 from "../assets/properties/ws5.jpeg"
 import ws6 from "../assets/properties/ws6.jpeg"
 
-// import Slideshow from "./Slideshow";
+import pam from "../assets/properties/pam.png"
+import pam1 from "../assets/properties/pam1.jpg"
+import pam2 from "../assets/properties/pam2.jpg"
+import pam3 from "../assets/properties/pam3.jpg"
+import pam4 from "../assets/properties/pam4.jpg"
+import pam5 from "../assets/properties/pam5.jpg"
+import pam6 from "../assets/properties/pam6.jpg"
+import pam7 from "../assets/properties/pam6.jpg"
+import pam8 from "../assets/properties/pam8.jpg"
+import pam9 from "../assets/properties/pam9.jpg"
+import pam10 from "../assets/properties/pam10.jpg"
+import pam11 from "../assets/properties/pam11.jpg"
+import pam12 from "../assets/properties/pam12.jpg"
+
 
 function Home() {
 
@@ -18,9 +32,18 @@ function Home() {
         {
             poster: westsuites,
             images: [ ws1, ws2, ws3, ws4, ws5, ws6 ],
-            description: "Perspiciatis sunt enim. Dolores aut quas. Esse molestiae quasi. Et commodi alias. Placeat dolor provident. Omnis accusantium quas. Consequatur aut omnis. Odio ut quod. Aliquid atque modi. Sunt et cupiditate. Nostrum qui quos. Quas voluptas et. Accusamus sit veritatis. Ratione harum officiis. Omnis et eum. Beatae enim dignissimos. Eaque nihil magni. Laudantium et est. Porro voluptatum sint. Molestias maiores voluptas. Debitis laudantium minima. Qui laboriosam deleniti. Eligendi rem qui. Aliquid fugit ratione. Eligendi rerum ducimus. Modi dolorum vel. Dignissimos perspiciatis natus. Nam sapiente exercitationem. Voluptatem quia quod.",
+            description: ["Perspiciatis sunt enim. Dolores aut quas. Esse molestiae quasi. Et commodi alias. Placeat dolor provident. Omnis accusantium quas. Consequatur aut omnis.", "Odio ut quod. Aliquid atque modi. Sunt et cupiditate. Nostrum qui quos. Quas voluptas et. Accusamus sit veritatis. Ratione harum officiis. Omnis et eum. Beatae enim dignissimos.", "Eaque nihil magni. Laudantium et est. Porro voluptatum sint. Molestias maiores voluptas. Debitis laudantium minima. Qui laboriosam deleniti. Eligendi rem qui. Aliquid fugit ratione. Eligendi rerum ducimus. Modi dolorum vel.", "Dignissimos perspiciatis natus. Nam sapiente exercitationem. Voluptatem quia quod."],
             title: "A Blend of Luxury",
-            themecolor: "red"
+            themecolor: "red",
+            location: "Kisauni Road, Nairobi West, Nairobi"
+        },
+        {
+            poster: pam,
+            images: [ pam1, pam2, pam3, pam4, pam5, pam6, pam7, pam8, pam9, pam10, pam11, pam12 ],
+            description: ["Looking for that serene homely stay?","Pam's Palatial home is the place to be.", "We have a beautifully furnished 4 bedroom home with 2 self contained cottages that are 2 bedroom each."],
+            title: "Pam's Palatial Home",
+            themecolor: "green",
+            location: "Nyahera, East Kisumu, Kisumu | XPFF+7P Kisumu"
         }
     ]
 
@@ -42,27 +65,27 @@ function Home() {
     )
 }
 
-function Property({poster, description, images, title, themecolor}) {
+function Property({poster, description, images, title, themecolor, location}) {
 
     let image = "", h1 = "", btn = ""
     if(themecolor === "red") {
-        image = <img className={`bg-red-900 w-full`} src={poster} alt="Property"/>
+        image = <img className={`bg-red-900 w-full rounded-br-3xl rounded-tl-3xl`} src={poster} alt="Property"/>
         h1 = <h1 className={`uppercase font-bold text-red-900 text-2xl text-center`}>{title}</h1>
-        btn = <button className={`text-white bg-red-900 m-5 py-2 px-8 border-white border-4 hover:bg-maroon-600 hover:border-sky-900 hover:text-black font-bold flex items-center`}>Explore More</button>
+        btn = <button className={`text-white bg-red-900 m-5 py-2 px-8 border-white border-4 hover:bg-maroon-600 hover:border-sky-900 hover:text-white hover:bg-red-900/50 font-bold flex items-center`}>Explore More</button>
     } else if(themecolor === "green") {
-        image = <img className={`bg-green-900 w-full`} src={poster} alt="Property"/>
+        image = <img className={`bg-green-900 w-full rounded-br-3xl rounded-tl-3xl`} src={poster} alt="Property"/>
         h1 = <h1 className={`uppercase font-bold text-green-900 text-2xl text-center`}>{title}</h1>
-        btn = <button className={`text-white bg-green-900 m-5 py-2 px-8 border-white border-4 hover:bg-maroon-600 hover:border-sky-900 hover:text-black font-bold flex items-center`}>Explore More</button>
+        btn = <button className={`text-white bg-green-900 m-5 py-2 px-8 border-white border-4 hover:bg-maroon-600 hover:border-sky-900 hover:text-white hover:bg-green-900/50 font-bold flex items-center`}>Explore More</button>
     } else if(themecolor === "blue") {
-        image = <img className={`bg-sky-900 w-full`} src={poster} alt="Property"/>
+        image = <img className={`bg-sky-900 w-full rounded-br-3xl rounded-tl-3xl`} src={poster} alt="Property"/>
         h1 = <h1 className={`uppercase font-bold text-sky-900 text-2xl text-center`}>{title}</h1>
-        btn = <button className={`text-white bg-sky-900 m-5 py-2 px-8 border-white border-4 hover:bg-maroon-600 hover:border-sky-900 hover:text-black font-bold flex items-center`}>Explore More</button>
+        btn = <button className={`text-white bg-sky-900 m-5 py-2 px-8 border-white border-4 hover:bg-maroon-600 hover:border-sky-900 hover:text-white hover:bg-sky-900/50 font-bold flex items-center`}>Explore More</button>
     } else if(themecolor === "orange") {
-        image = <img className={`bg-amber-600 w-full`} src={poster} alt="Property"/>
+        image = <img className={`bg-amber-600 w-full rounded-br-3xl rounded-tl-3xl`} src={poster} alt="Property"/>
         h1 = <h1 className={`uppercase font-bold text-amber-600 text-2xl text-center`}>{title}</h1>
-        btn = <button className={`text-white bg-amber-600 m-5 py-2 px-8 border-white border-4 hover:bg-maroon-600 hover:border-sky-900 hover:text-black font-bold flex items-center`}>Explore More</button>
+        btn = <button className={`text-white bg-amber-600 m-5 py-2 px-8 border-white border-4 hover:bg-maroon-600 hover:border-sky-900 hover:text-white hover:bg-amber-600/50 font-bold flex items-center`}>Explore More</button>
     } else {
-        image = <img className={`bg-white w-full`} src={poster} alt="Property"/>
+        image = <img className={`bg-white w-full rounded-br-3xl rounded-tl-3xl`} src={poster} alt="Property"/>
         h1 = <h1 className={`uppercase font-bold text-white text-2xl text-center`}>{title}</h1>
         btn = <button className={`text-white bg-white m-5 py-2 px-8 border-white border-4 hover:bg-maroon-600 hover:border-sky-900 hover:text-black font-bold flex items-center`}>Explore More</button>
     }
@@ -75,7 +98,19 @@ function Property({poster, description, images, title, themecolor}) {
                     </div>
                     <div className="p-3">
                         {h1}
-                        <p>{description}</p>
+                        <div>
+                            {
+                                description.map((p, i) => {
+                                    return (
+                                        <>
+                                            {p}
+                                            <hr className="my-3 border-sky-900/50 w-3/4 mx-auto" />
+                                        </>
+                                    )
+                                })
+                            }
+                        </div>
+                        <div className="font-bold font-mono  border w-max p-2 bg-sky-400 flex"><ImLocation2 className="mr-3" />{location}</div>
                         {btn}
                     </div>
                 </div>
