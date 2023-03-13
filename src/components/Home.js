@@ -110,7 +110,7 @@ function Property({poster, description, images, title, themecolor, location}) {
                                 })
                             }
                         </div>
-                        <div className="font-bold font-mono  border w-max p-2 bg-sky-400 flex"><ImLocation2 className="mr-3" />{location}</div>
+                        <div className="font-bold font-mono  border w-max-lg p-2 bg-sky-400 flex flex-wrap"><ImLocation2 className="mr-3" />{location}</div>
                         {btn}
                     </div>
                 </div>
