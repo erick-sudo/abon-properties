@@ -4,7 +4,7 @@ import logoR from "../assets/logos/logo2.png"
 
 function LogoSquare() {
     return (
-        <div className="logo">
+        <div className="logo max-w-max">
             <img src={logoS} alt="ABONN" />
         </div>
     )
