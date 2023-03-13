@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <div className='routing bg-sky-700'>
+      <div className='routing'>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />

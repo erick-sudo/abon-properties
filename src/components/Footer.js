@@ -6,7 +6,7 @@ import { LogoSquare } from "./Logo";
 
 function Footer() {
     return (
-        <div className="footer flex flex-col">
+        <div className="footer flex flex-col bg-sky-300">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center">
                 <Subscribe />
                 <Social />

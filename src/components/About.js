@@ -10,7 +10,7 @@ function About() {
     return (
         <div className="about">
             <div className="text-center p-7 flex justify-end">
-                <div className=" max-w-xl bg-sky-200/70 rounded-md grid grid-cols-1 md:grid-cols-2">
+                <div className=" max-w-xl bg-sky-200/70 rounded-md grid grid-cols-1 md:grid-cols-2 shadow-md shadow-black">
                     <div>
                         <h1 className="text-2xl text-sky-900 p-3 font-extrabold">Invest for the long haul.<br />Don't get too greedy and don't get too scared</h1>
                         <div className="border w-1/2 mx-auto border-amber-600"></div>
@@ -22,8 +22,8 @@ function About() {
                 </div>
             </div>
             <div className="history py-6 flex flex-col justify-center items-center">
-                <Section description="Doloremque inventore modi est dolores voluptatum asperiores vel ea dolorem voluptatibus laboriosam ut eos aut excepturi eos maiores in voluptas voluptates magnam est accusamus omnis quia enim consequuntur corporis provident." order={0} image={mission} />
-                <Section description="Doloremque inventore modi est dolores voluptatum asperiores vel ea dolorem voluptatibus laboriosam ut eos aut excepturi eos maiores in voluptas voluptates magnam est accusamus omnis quia enim consequuntur corporis provident." order={1} image={vision} />
+                <Section description="Doloremque inventore modi est dolores voluptatum asperiores vel ea dolorem voluptatibus laboriosam ut eos aut excepturi eos maiores in voluptas voluptates magnam est accusamus omnis quia enim consequuntur corporis provident." title="Mission" order={0} image={mission} />
+                <Section description="Doloremque inventore modi est dolores voluptatum asperiores vel ea dolorem voluptatibus laboriosam ut eos aut excepturi eos maiores in voluptas voluptates magnam est accusamus omnis quia enim consequuntur corporis provident." title="Vision" order={1} image={vision} />
                 <Section description="Doloremque inventore modi est dolores voluptatum asperiores vel ea dolorem voluptatibus laboriosam ut eos aut excepturi eos maiores in voluptas voluptates magnam est accusamus omnis quia enim consequuntur corporis provident." title="Purpose" order={0} image={purpose} />
             </div>
 
@@ -36,16 +36,16 @@ function Ribbon() {
     return (
         <div className="grid grid-cols-3 mx-5 my-9 bg-white rounded-full divide-x">
             <div className="flex items-center justify-center p-4 hover:bg-sky-900 rounded-l-full hover:text-white">
-                <p>Blog</p>
-                <GrBlog className="ml-3"/>
+                <GrBlog />
+                <p className="ml-3">Blog</p>
             </div>
             <div className="flex items-center justify-center p-4 hover:bg-sky-900 hover:text-white">
-                <p>Services</p>
-                <GrServices className="ml-3"/>
+                <GrServices/>
+                <p className="ml-3">Services</p>
             </div>
             <div className="flex items-center justify-center p-4 hover:bg-sky-900 rounded-r-full hover:text-white">
-                <p>Contact Us</p>
-                <GrContactInfo className="ml-3"/>
+                <GrContactInfo />
+                <p className="ml-3">Contact Us</p>
             </div>
         </div>
     )
@@ -64,7 +64,7 @@ function Section({title, description, image, order}) {
         ]
 
     return (
-        <div className="sects bg-sky-400 m-6 shadow-md lg:w-xl grid grid-cols-1 md:grid-cols-2 flex-row-reverse items-center rounded-md">
+        <div className="sects bg-sky-400 m-6 shadow-md shadow-black lg:w-xl grid grid-cols-1 md:grid-cols-2 flex-row-reverse items-center rounded-md">
             {
                 order === 0 ? divs : divs.reverse()
             }

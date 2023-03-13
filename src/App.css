@@ -1,8 +1,18 @@
 .App {
-  
+    position: fixed;
+    background: url("./assets/background/empire1.png") no-repeat top center;
+    overflow: scroll;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
+.App::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+  
 .about {
-    background: url("./assets/background/empire1.png") center;
     background-size: contain
 }
 .routing {
@@ -16,5 +26,4 @@
 }
 .footer{
     margin-top: 2em;
-    border: solid 1px;
 }
