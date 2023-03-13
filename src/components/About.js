@@ -4,6 +4,8 @@ import mission from "../assets/about/mission.png"
 import vision from "../assets/about/vision.png"
 import purpose from "../assets/about/purpose.png"
 
+import { GrServices, GrBlog, GrContactInfo } from "react-icons/gr"
+
 function About() {
     return (
         <div className="about">
@@ -23,6 +25,27 @@ function About() {
                 <Section description="Doloremque inventore modi est dolores voluptatum asperiores vel ea dolorem voluptatibus laboriosam ut eos aut excepturi eos maiores in voluptas voluptates magnam est accusamus omnis quia enim consequuntur corporis provident." order={0} image={mission} />
                 <Section description="Doloremque inventore modi est dolores voluptatum asperiores vel ea dolorem voluptatibus laboriosam ut eos aut excepturi eos maiores in voluptas voluptates magnam est accusamus omnis quia enim consequuntur corporis provident." order={1} image={vision} />
                 <Section description="Doloremque inventore modi est dolores voluptatum asperiores vel ea dolorem voluptatibus laboriosam ut eos aut excepturi eos maiores in voluptas voluptates magnam est accusamus omnis quia enim consequuntur corporis provident." title="Purpose" order={0} image={purpose} />
+            </div>
+
+            <Ribbon />
+        </div>
+    )
+}
+
+function Ribbon() {
+    return (
+        <div className="grid grid-cols-3 mx-5 my-9 bg-white rounded-full divide-x">
+            <div className="flex items-center justify-center p-4 hover:bg-sky-900 rounded-l-full hover:text-white">
+                <p>Blog</p>
+                <GrBlog className="ml-3"/>
+            </div>
+            <div className="flex items-center justify-center p-4 hover:bg-sky-900 hover:text-white">
+                <p>Services</p>
+                <GrServices className="ml-3"/>
+            </div>
+            <div className="flex items-center justify-center p-4 hover:bg-sky-900 rounded-r-full hover:text-white">
+                <p>Contact Us</p>
+                <GrContactInfo className="ml-3"/>
             </div>
         </div>
     )
