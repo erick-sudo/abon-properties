@@ -63,7 +63,7 @@ function Slideshow({images}) {
                 {
                     images.map((img,index) => {
                         return (
-                            <button key={index} onClick={() => carousel.slideTo(index)} type="button" className="w-4 h-4 rounded-full" aria-current="true" aria-label={`Slide ${index+1}`}>-</button>
+                            <button key={index} onClick={() => carousel.slideTo(index)} type="button" className="w-5 h-5 rounded-full font-bold flex justify-center items-center" aria-current="true" aria-label={`Slide ${index+1}`}>+</button>
                         )
                     })
                 }
