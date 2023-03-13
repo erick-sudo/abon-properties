@@ -2,6 +2,8 @@ import React from "react";
 import logo from "../assets/logos/logo1.png"
 import mission from "../assets/about/mission.png"
 import vision from "../assets/about/vision.png"
+import purpose from "../assets/about/purpose.png"
+
 function About() {
     return (
         <div className="about">
@@ -19,21 +21,30 @@ function About() {
             </div>
             <div className="history py-6 flex flex-col justify-center items-center">
                 <Section description="Doloremque inventore modi est dolores voluptatum asperiores vel ea dolorem voluptatibus laboriosam ut eos aut excepturi eos maiores in voluptas voluptates magnam est accusamus omnis quia enim consequuntur corporis provident." order={0} image={mission} />
-                <Section description="Doloremque inventore modi est dolores voluptatum asperiores vel ea dolorem voluptatibus laboriosam ut eos aut excepturi eos maiores in voluptas voluptates magnam est accusamus omnis quia enim consequuntur corporis provident." order={0} image={vision} />
+                <Section description="Doloremque inventore modi est dolores voluptatum asperiores vel ea dolorem voluptatibus laboriosam ut eos aut excepturi eos maiores in voluptas voluptates magnam est accusamus omnis quia enim consequuntur corporis provident." order={1} image={vision} />
+                <Section description="Doloremque inventore modi est dolores voluptatum asperiores vel ea dolorem voluptatibus laboriosam ut eos aut excepturi eos maiores in voluptas voluptates magnam est accusamus omnis quia enim consequuntur corporis provident." title="Purpose" order={0} image={purpose} />
             </div>
         </div>
     )
 }
 
 function Section({title, description, image, order}) {
+
+    const divs = [
+        <div className="py-9 px-4" key={0}>
+            <img src={image} alt={title} className=" my-8" />
+        </div>,
+        <div className="p-6 " key={1}>
+            <h1 className="text-xl font-bold text-amber-600">{title}</h1>
+            <p className="font-medium">{description}</p>
+        </div>
+        ]
+
     return (
-        <div className="sects bg-sky-300 m-6 shadow-md lg:w-xl grid grid-cols-1 md:grid-cols-2 items-center rounded-md">
-            <div className="py-9 px-4">
-                <img src={image} alt={title} className=" my-8" />
-            </div>
-            <div className="p-6 ">
-                <p className="font-medium">{description}</p>
-            </div>
+        <div className="sects bg-sky-400 m-6 shadow-md lg:w-xl grid grid-cols-1 md:grid-cols-2 flex-row-reverse items-center rounded-md">
+            {
+                order === 0 ? divs : divs.reverse()
+            }
         </div>
     )
 }
