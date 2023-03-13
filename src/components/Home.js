@@ -43,16 +43,40 @@ function Home() {
 }
 
 function Property({poster, description, images, title, themecolor}) {
+
+    let image = "", h1 = "", btn = ""
+    if(themecolor === "red") {
+        image = <img className={`bg-red-900 w-full`} src={poster} alt="Property"/>
+        h1 = <h1 className={`uppercase font-bold text-red-900 text-2xl text-center`}>{title}</h1>
+        btn = <button className={`text-white bg-red-900 m-5 py-2 px-8 border-white border-4 hover:bg-maroon-600 hover:border-sky-900 hover:text-black font-bold flex items-center`}>Explore More</button>
+    } else if(themecolor === "green") {
+        image = <img className={`bg-green-900 w-full`} src={poster} alt="Property"/>
+        h1 = <h1 className={`uppercase font-bold text-green-900 text-2xl text-center`}>{title}</h1>
+        btn = <button className={`text-white bg-green-900 m-5 py-2 px-8 border-white border-4 hover:bg-maroon-600 hover:border-sky-900 hover:text-black font-bold flex items-center`}>Explore More</button>
+    } else if(themecolor === "blue") {
+        image = <img className={`bg-sky-900 w-full`} src={poster} alt="Property"/>
+        h1 = <h1 className={`uppercase font-bold text-sky-900 text-2xl text-center`}>{title}</h1>
+        btn = <button className={`text-white bg-sky-900 m-5 py-2 px-8 border-white border-4 hover:bg-maroon-600 hover:border-sky-900 hover:text-black font-bold flex items-center`}>Explore More</button>
+    } else if(themecolor === "orange") {
+        image = <img className={`bg-amber-600 w-full`} src={poster} alt="Property"/>
+        h1 = <h1 className={`uppercase font-bold text-amber-600 text-2xl text-center`}>{title}</h1>
+        btn = <button className={`text-white bg-amber-600 m-5 py-2 px-8 border-white border-4 hover:bg-maroon-600 hover:border-sky-900 hover:text-black font-bold flex items-center`}>Explore More</button>
+    } else {
+        image = <img className={`bg-white w-full`} src={poster} alt="Property"/>
+        h1 = <h1 className={`uppercase font-bold text-white text-2xl text-center`}>{title}</h1>
+        btn = <button className={`text-white bg-white m-5 py-2 px-8 border-white border-4 hover:bg-maroon-600 hover:border-sky-900 hover:text-black font-bold flex items-center`}>Explore More</button>
+    }
+
     return (
         <div className="bg-sky-200 m-4 rounded-md">
                 <div className="property p-6 grid grid-cols-1 md:grid-cols-2 items-center">
                     <div className="max-w-xl">
-                        <img className={`bg-${themecolor}-900 w-full`} src={poster} alt="Property"/>
+                        {image}
                     </div>
                     <div className="p-3">
-                        <h1 className={`uppercase font-bold text-${themecolor}-900 text-2xl text-center`}>{title}</h1>
+                        {h1}
                         <p>{description}</p>
-                        <button className={`text-white bg-${themecolor}-900 m-5 py-2 px-8 border-white border-4 hover:bg-maroon-600 hover:border-sky-900 hover:text-black font-bold flex items-center`}>Explore More</button>
+                        {btn}
                     </div>
                 </div>
 
