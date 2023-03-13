@@ -1,3 +1,16 @@
 .App {
   
 }
+.about {
+    background: url("./assets/background/empire1.png") no-repeat center;
+    background-size: cover;
+}
+.routing {
+    min-height: 500px;
+}
+.history {
+    background-color: skyblue;
+}
+.sects {
+    margin-top: 2em !important;
+}
