@@ -9,7 +9,7 @@ import placeholder2 from "../assets/about/placeholder2.jpg"
 import placeholder3 from "../assets/about/placeholder3.jpg"
 import placeholder4 from "../assets/about/placeholder4.jpg"
 
-import { ImOffice, ImWhatsapp } from 'react-icons/im'
+import { ImWhatsapp } from 'react-icons/im'
 
 import { GrServices, GrBlog, GrContactInfo } from "react-icons/gr"
 
