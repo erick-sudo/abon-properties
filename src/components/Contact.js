@@ -14,28 +14,28 @@ function Contact() {
             channel: <ImOffice />,
             h3: "Main Office",
             values: [
-                "XPFF+7P Kisumu"
+                "Madaraka Estate"
             ]
         },
         {
             channel: <ImWhatsapp />,
             h3: "Whatsapp",
             values: [
-                "+25476482993","+25699308430"
+                "+254722596820","+254722895566"
             ]
         },
         {
             channel: <FiPhoneCall />,
             h3: "Direct Calls",
             values: [
-                "+25476482993","+25699308430"
+                "+254722596820","+254722895566"
             ]
         },
         {
             channel: <FaQuestion />,
             h3: "Make Inquiries",
             values: [
-                "+25476482993","+25699308430"
+                "+254722596820","+254722895566"
             ]
         }
     ]

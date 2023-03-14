@@ -51,7 +51,7 @@ function Home() {
         <div>
             <div className="bg-sky-800/50">
                 <div className="w-max flex flex-col items-center">
-                    <h1 className="w-42 w-max px-6 py-32 font-bold text-white text-5xl">Necessitatibus <br />distinctio<br />reprehenderit<br /> nemo.</h1>
+                    <div className="w-42 w-max px-6 py-32 font-bold text-white text-5xl break-words">Welcome Home<br />...............</div>
                     <button className="text-white bg-sky-900 m-5 py-2 px-8 rounded-lg hover:bg-amber-600 hover:border hover:border-sky-900 hover:text-black font-bold flex items-center">EXPLORE<MdOutlineExplore className="ml-3 text-4xl animate-spin " /></button>
                 </div>
             </div>

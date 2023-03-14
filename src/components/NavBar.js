@@ -15,8 +15,8 @@ function NavBar() {
                 <NavLink to="/about" className="px-2 py-1 hover:bg-sky-800 hover:text-white rounded-md">About</NavLink>
             </div>
             <div className="flex flex-wrap justify-center">
-                <div className="flex px-3 font-bold text-green-900 items-center"><ImWhatsapp className="text-xl"/><span className="ml-3">+254706087204</span></div>
-                <div className="flex px-3 font-bold text-green-900 items-center"><FiPhoneCall className="text-xl"/><span className="ml-3">+436787437954</span></div>
+                <div className="flex px-3 font-bold text-green-900 items-center"><ImWhatsapp className="text-xl"/><span className="ml-3">+254722596820</span></div>
+                <div className="flex px-3 font-bold text-green-900 items-center"><FiPhoneCall className="text-xl"/><span className="ml-3">+254722895566</span></div>
             </div>
         </div>
     )
