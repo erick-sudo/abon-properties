@@ -36,7 +36,7 @@ function Properties() {
 
 function Property({title, star_rating, likes, views}) {
     return (
-        <div className="relative bg-gray-200 mt-3 mr-3 ml-3 shadow-black shadow-md">
+        <div className="relative bg-gray-400 mt-3 mr-3 ml-3 shadow-black shadow-md">
             <div className="">
                 <img className="" src={b1} alt="..." />
             </div>
