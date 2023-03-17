@@ -2,10 +2,10 @@ import React from "react";
 import logoS from "../assets/logos/logo1.png"
 import logoR from "../assets/logos/logo2.png"
 
-function LogoSquare() {
+function LogoSquare({h=10}) {
     return (
         <div className="logo max-w-max">
-            <img src={logoS} alt="ABONN" />
+            <img src={logoS} alt="ABONN" style={{height: `${h}vh`}} />
         </div>
     )
 }

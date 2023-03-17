@@ -57,8 +57,8 @@ function Contact() {
 
 function DirectContact({channel, values, h3}) {
     return (
-        <div className="bg-sky-200 m-4 min-w-xs flex flex-col justify-center items-center p-3 hover:bg-white shadow-lg shadow-black">
-            <div className="text-4xl text-sky-600">
+        <div className="bg-gray-300 m-4 min-w-xs flex flex-col justify-center items-center p-3 hover:bg-white shadow-lg shadow-black hover:ring hover:ring-sky-700/50 hover:rounded-md">
+            <div className="text-4xl text-sky-700">
                 {channel}
             </div>
             <h3 className="font-bold py-2">{h3}</h3>
@@ -77,11 +77,11 @@ function DirectContact({channel, values, h3}) {
 
 function ContactForm() {
     return (
-        <div className="bg-sky-100 grid sm:grid-cols-2 p-4">
+        <div className="bg-gray-200 grid sm:grid-cols-2 p-4">
             <div className=" hidden w-full items-center justify-center sm:flex p-6">
                 <img src={c1} />
             </div>
-            <form className="bg-sky-300 p-3">
+            <form className="bg-gray-400 p-3">
                 <h2 className="text-center font-bold text-sm">Send us a message</h2>
                 <label className="flex flex-col p-2">
                     <span className="mr-3">First Name<span className="ml-1 text-red-600">*</span></span>

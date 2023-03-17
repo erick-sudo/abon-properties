@@ -13,7 +13,7 @@ function Properties() {
                 <h1 className="text-6xl my-3">Your trusted partners in property</h1>
                 
                 <h3 className="mt-7 px-3 font-normal text-sm text-center">We provide innovative property solutions for our clients that add tangible value across property sectors and services</h3>
-                <div className="grow flex justify-center items-center text-sky-400"><span className="text-2xl flex items-center"><MdOutlineArrowBackIosNew />======</span><TiStarburst className="text-8xl animate-spin duration-1000" /><span className="text-2xl flex items-center">======<MdOutlineArrowForwardIos /></span></div>
+                <div className="grow flex justify-center items-center text-sky-400"><span className="text-2xl flex items-center"><MdOutlineArrowBackIosNew /></span><TiStarburst className="text-8xl animate-bounce transition duration-1000" /><span className="text-2xl flex items-center"><MdOutlineArrowForwardIos /></span></div>
             </div>
             <div className="grid sm:grid-cols-2 md:grid-cols-3">
                 {

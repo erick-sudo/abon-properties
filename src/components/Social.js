@@ -5,7 +5,7 @@ import { BsFacebook, BsTwitter, BsSlack } from 'react-icons/bs'
 
 function Social() {
     return (
-        <div className="m-4 bg-sky-200 max-w-lg rounded-md shadow-lg">
+        <div className="m-4 bg-gray-200 max-w-lg rounded-md shadow-lg">
             <h2 className="font-bold p-3 text-center">Reach out</h2>
             <div className="flex flex-row flex-wrap justify-center pb-4">
                 <a className="text-3xl px-5 py-2 text-sky-900 hover:animate-pulse hover:text-green-900 hover:scale-125" href="https://whatsapp.com"><ImWhatsapp /></a>

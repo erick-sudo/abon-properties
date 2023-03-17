@@ -2,7 +2,7 @@ import React from "react";
 
 function Subscribe() {
     return (
-        <div className="flex flex-col py-3 px-5 shadow-lg bg-sky-200 rounded-md max-w-lg m-4">
+        <div className="flex flex-col py-3 px-5 shadow-lg bg-gray-200 rounded-md max-w-lg m-4">
             <h2 className="font-bold">Subscribe to our news letter</h2>
             <form className="mt-4">
                 <label className="flex flex-col">

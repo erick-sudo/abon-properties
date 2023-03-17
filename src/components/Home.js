@@ -91,7 +91,7 @@ function Property({poster, description, images, title, themecolor, location}) {
     }
 
     return (
-        <div className="bg-sky-200 m-4 rounded-md">
+        <div className="bg-gray-300 m-4 rounded-md">
                 <div className="property p-6 grid grid-cols-1 md:grid-cols-2 items-center">
                     <div className="max-w-xl">
                         {image}
