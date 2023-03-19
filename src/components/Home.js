@@ -32,7 +32,7 @@ function Home() {
         {
             poster: westsuites,
             images: [ ws1, ws2, ws3, ws4, ws5, ws6 ],
-            description: ["Perspiciatis sunt enim. Dolores aut quas. Esse molestiae quasi. Et commodi alias. Placeat dolor provident. Omnis accusantium quas. Consequatur aut omnis.", "Odio ut quod. Aliquid atque modi. Sunt et cupiditate. Nostrum qui quos. Quas voluptas et. Accusamus sit veritatis. Ratione harum officiis. Omnis et eum. Beatae enim dignissimos.", "Eaque nihil magni. Laudantium et est. Porro voluptatum sint. Molestias maiores voluptas. Debitis laudantium minima. Qui laboriosam deleniti. Eligendi rem qui. Aliquid fugit ratione. Eligendi rerum ducimus. Modi dolorum vel.", "Dignissimos perspiciatis natus. Nam sapiente exercitationem. Voluptatem quia quod."],
+            description: ["Set in Nairobi, just 3.1 Km from the CBD.", "An apartment with city views", "This apartment features parquet floors, 1 bedroom and a bathroom with shower, bath and free toiletries.","A well-equipped kitchen with a fridge, an oven and a microwave.","Staff is always available to provide information at the reception."],
             title: "A Blend of Luxury",
             themecolor: "red",
             location: "Kisauni Road, Nairobi West, Nairobi"

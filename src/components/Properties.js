@@ -3,7 +3,8 @@ import { CgArrowLongRightR } from "react-icons/cg"
 import { TiStarburst } from "react-icons/ti"
 import { MdOutlineArrowBackIosNew, MdOutlineArrowForwardIos, MdOutlinePreview} from "react-icons/md"
 
-import b1 from "../assets/properties/p1/b1.png"
+import ws2 from "../assets/properties/ws1.jpeg"
+import pam1 from "../assets/properties/pam1.jpg"
 
 import { SlLike } from "react-icons/sl"
 import { GrView } from "react-icons/gr"
@@ -21,29 +22,24 @@ function Properties() {
                 <h3 className="mt-7 px-3 font-normal text-sm text-center">We provide innovative property solutions for our clients that add tangible value across property sectors and services</h3>
                 <div className="grow flex justify-center items-center text-gray-400"><span className="text-2xl flex items-center"><MdOutlineArrowBackIosNew /></span><TiStarburst className="text-8xl animate-bounce transition duration-1000" /><span className="text-2xl flex items-center"><MdOutlineArrowForwardIos /></span></div>
             </div>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
-                {
-                    properties.map((property, index) => {
-                        return (
-                            <Property key={index} title={property} star_rating={Math.floor(Math.random()*100)%10} views={Math.floor(Math.random()*100000)} likes={Math.floor(Math.random()*1000000)} />
-                        )
-                    })
-                }
+            <div className="bg-gray-300 p-4 grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+                <Property poster={ws2} title={"West Suites"} star_rating={Math.floor(Math.random()*100)%10} views={Math.floor(Math.random()*100000)} likes={Math.floor(Math.random()*1000000)} /> 
+                <Property poster={pam1} title={"Pam's Palatial Home"} star_rating={Math.floor(Math.random()*100)%10} views={Math.floor(Math.random()*100000)} likes={Math.floor(Math.random()*1000000)} />
             </div>
         </div>
     )
 }
 
-function Property({title, star_rating, likes, views}) {
+function Property({title, poster, star_rating, likes, views}) {
     return (
-        <div className="relative bg-gray-300 mt-3 mr-3 ml-3 shadow-black shadow-md hover:bg-white">
+        <div className="relative bg-gray-300 mt-3 mr-3 rounded-md ml-3 shadow-black shadow-md shadow- hover:bg-white">
             <div className="">
-                <img className="" src={b1} alt="..." />
+                <img className="rounded-t-md" src={poster} alt="..." />
             </div>
             <div className="flex flex-row-reverse my-1">
                 <button className="w-1/2 mr-3 text-2xl text-red-700 bg-black px-8 py-1 hover:text-white hover:scale-110 "><CgArrowLongRightR /></button>
             </div>
-            <h3 className="font-bold p-2 absolute top-2">{title}</h3>
+            <h3 className="font-bold p-2 absolute top-2 left-3 text-center right-3 bg-gray-200/50 text-xl">{title}</h3>
             <Status star_rating={star_rating} likes={likes} views={views} />
         </div>
     )
