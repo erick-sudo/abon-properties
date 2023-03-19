@@ -49,8 +49,8 @@ function Status({star_rating, likes, views}) {
     return (
         <div className="">
             <div className="grid grid-cols-2">
-                <span className="flex items-center text-sm">{<SlLike className="text-xl mx-2 text-sky-700" />}{likes} Likes</span>
-                <span className="flex items-center text-sm">{<MdOutlinePreview className="text-xl mx-2 text-sky-700" />}{views} Views</span>
+                <span className="flex items-center justify-center text-sm text-center">{<SlLike className="text-xl mx-2 text-sky-700" />}{likes} Likes</span>
+                <span className="flex items-center justify-center text-sm">{<MdOutlinePreview className="text-xl mx-2 text-sky-700" />}{views} Views</span>
             </div>
             <div className="font-bold">
                 <div className="text-center">Rating {star_rating}</div>
